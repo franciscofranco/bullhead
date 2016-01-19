@@ -968,4 +968,70 @@ tANI_U8* macTraceMsgString(tpAniSirGlobal pMac, tANI_U32 msgType)
                 return ((tANI_U8*)"Unknown MsgType");
     }
 }
+#else
+void macTraceReset(tpAniSirGlobal pMac)
+{
+}
+void macTrace(tpAniSirGlobal pMac, tANI_U8 code, tANI_U16 session,
+              tANI_U32 data)
+{
+}
+
+void macTraceNew(tpAniSirGlobal pMac, tANI_U8 module, tANI_U8 code,
+                 tANI_U16 session, tANI_U32 data)
+{
+}
+
+tANI_U8* macTraceGetCfgMsgString( tANI_U16 cfgMsg )
+{
+}
+
+tANI_U8* macTraceGetLimMsgString( tANI_U16 limMsg )
+{
+}
+
+tANI_U8* macTraceGetWdaMsgString( tANI_U16 wdaMsg )
+{
+}
+
+tANI_U8* macTraceGetSmeMsgString( tANI_U16 smeMsg )
+{
+}
+
+tANI_U8* macTraceGetModuleString( tANI_U8 moduleId)
+{
+}
+
+tANI_U8* macTraceGetInfoLogString( tANI_U16 infoLog )
+{
+}
+
+tANI_U8* macTraceGetHDDWlanConnState(tANI_U16 connState)
+{
+}
+
+tANI_U8* macTraceGetNeighbourRoamState(tANI_U16 neighbourRoamState)
+{
+}
+
+tANI_U8* macTraceGetcsrRoamState(tANI_U16 csrRoamState)
+{
+}
+
+tANI_U8* macTraceGetcsrRoamSubState(tANI_U16 csrRoamSubState)
+{
+}
+
+tANI_U8* macTraceGetLimSmeState(tANI_U16 limState)
+{
+}
+
+tANI_U8* macTraceGetLimMlmState(tANI_U16 mlmState)
+{
+}
+
+tANI_U8* macTraceGetTLState(tANI_U16 tlState)
+{
+}
+
 #endif

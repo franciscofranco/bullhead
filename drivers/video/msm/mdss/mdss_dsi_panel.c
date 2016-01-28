@@ -32,6 +32,13 @@ DEFINE_LED_TRIGGER(bl_led_trigger);
 static int mdss_bl_ctrl_panel = false;
 static int bl_default_lvl = 1800;
 
+bool display_on = true;
+
+bool is_display_on(void)
+{
+        return display_on;
+}
+
 void mdss_set_bl_ctrl_by_panel(int enable)
 {
 	mdss_bl_ctrl_panel = enable;
@@ -40,12 +47,6 @@ void mdss_set_bl_ctrl_by_panel(int enable)
 static int mdss_bl_ctrl_by_panel(void)
 {
 	return mdss_bl_ctrl_panel;
-
-bool display_on = true;
-
-bool is_display_on()
-{
-	return display_on;
 }
 
 void mdss_dsi_panel_pwm_cfg(struct mdss_dsi_ctrl_pdata *ctrl)

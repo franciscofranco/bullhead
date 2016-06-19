@@ -54,7 +54,6 @@
 #define eLOG_NODROP_MISSED_BEACON_SCENARIO 0
 #define eLOG_PROC_DEAUTH_FRAME_SCENARIO 1
 
-#endif
 
 void macTraceReset(tpAniSirGlobal pMac);
 void macTrace(tpAniSirGlobal pMac, tANI_U8 code, tANI_U16 session,
@@ -82,5 +81,7 @@ tANI_U8* macTraceGetcsrRoamSubState(tANI_U16 csrRoamSubState);
 tANI_U8* macTraceGetLimSmeState(tANI_U16 limState);
 tANI_U8* macTraceGetLimMlmState(tANI_U16 mlmState);
 tANI_U8* macTraceGetTLState(tANI_U16 tlState);
+
+#endif
 
 #endif
